@@ -20,3 +20,5 @@ connection.connect((err)=>{
         console.log(err);
     }
 })
+
+module.exports = connection;
