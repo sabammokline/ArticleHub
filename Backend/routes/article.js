@@ -69,7 +69,7 @@ router.get('/getallarticles', auth.authenticationToken, (req, res) => {
     });
 });
 
-router.get('/getallPublishedarticles', auth.authenticationToken, (req, res) => {
+router.get('/getallPublishedarticles', (req, res) => {
     const query = `
         SELECT 
             a.id,
